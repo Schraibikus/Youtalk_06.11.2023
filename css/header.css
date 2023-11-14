@@ -1,0 +1,177 @@
+.header::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	top: 7.5rem;
+	left: 0;
+	background-color: #EFF5FB;
+}
+
+.header__inner {
+	min-height: 7.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	margin-left: 5.1rem;
+	margin-right: auto;
+}
+
+.logo-img {
+	width: 100%;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.wrapper__item {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.menu__link {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 114%;
+	letter-spacing: .25px;
+	color: var(--text-accent1);
+}
+
+.menu__link-svg {
+	display: block;
+}
+
+.button {
+	border-radius: .4rem;
+	border: none;
+	cursor: pointer;
+	font-family: var(--font-main);
+	font-size: 1.6rem;
+	font-weight: 700;
+	transition: all .4s ease;
+}
+
+.header__btn {
+	padding: 1.4rem 2rem;
+	color: var(--color-accent1);
+	background-color: var(--color-accent4);
+	font-size: 1.6rem;
+}
+
+.header__btn:hover {
+	color: var(--color-accent4);
+	background-color: #03a094;
+}
+
+.header__btn:active {
+	background-color: #028076;
+}
+
+.header__burger {
+	display: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+	.menu {
+		margin: 0 auto;
+	}
+
+	.menu__list {
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	.menu__list {
+		gap: .5rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.menu {
+		margin-left: 3.2rem;
+	}
+
+	.menu__list {
+		gap: 1.6rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	.menu {
+		margin: 0 auto;
+	}
+
+	.menu__list {
+		gap: .5rem;
+	}
+}
+
+@media (max-width: 875px) {
+	.header__btn {
+		padding: 1.4rem 1rem;
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 850px) {
+	.menu__list {
+		gap: 1rem;
+	}
+
+	.menu__link {
+		font-size: 1.2rem;
+		letter-spacing: 0;
+	}
+
+	.header__btn {
+		padding: 1.4rem .5rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu,
+	.header__btn {
+		display: none;
+	}
+
+	.header__burger {
+		display: block;
+	}
+}
+
+@media (max-width: 414px) {
+	.header::after {
+		top: 7.2rem;
+	}
+
+	.header__inner {
+		min-height: 7.2rem;
+	}
+
+	.logo {
+		width: 4.8rem;
+		height: 3.4rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.header::after {
+		top: 5.6rem;
+	}
+	
+	.header__inner {
+		min-height: 5.6rem;
+	}
+}
